@@ -157,7 +157,7 @@ const App = () => {
         <div className="max-w-4xl mx-auto px-4 py-4">
           <h1 className="text-2xl font-bold text-gray-800 flex items-center">
             <span className="mr-2">🤖</span>
-            Data Analysis Assistant
+            Talk to Data
           </h1>
           <p className="text-gray-600 text-sm mt-1">
             Ask questions about your company data and get instant insights
@@ -172,7 +172,7 @@ const App = () => {
           {conversation.length === 0 && (
             <div className="text-center text-gray-500 py-12">
               <div className="text-4xl mb-4">📊</div>
-              <h3 className="text-lg font-semibold mb-2">Welcome to your Data Assistant!</h3>
+              <h3 className="text-lg font-semibold mb-2">Welcome to Talk to Data!</h3>
               <p className="text-sm">Ask questions like:</p>
               <div className="mt-3 space-y-1 text-xs text-gray-600">
                 <p>"How many employees are in each department?"</p>

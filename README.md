@@ -1,6 +1,6 @@
-# DynamicGraph
+# Talk to Data
 
-DynamicGraph is a natural-language data exploration app built with FastAPI, LangChain, Groq, React, and Plotly. Ask questions about the sample HR data and explore generated visualizations.
+Talk to Data is a natural-language data exploration app built with FastAPI, LangChain, Groq, React, and Plotly. Ask questions about the sample HR data and explore generated visualizations.
 
 ## Run locally on Windows
 
