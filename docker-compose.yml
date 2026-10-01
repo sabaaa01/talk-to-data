@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY:?Set GROQ_API_KEY in your .env file}
+      - POSTGRES_HOST=db
+      - POSTGRES_DB=sales_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pgpasswd
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=sales_db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pgpasswd
+    volumes:
+      - ./init_db.sql:/docker-entrypoint-initdb.d/init_db.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,13 @@
+psycopg2-binary
+pandas==2.2.2
+plotly==5.22.0
+langgraph
+langchain
+langchain-core
+langchain-community
+groq
+fastapi
+uvicorn
+langchain-groq
+SQLAlchemy
+python-dotenv
